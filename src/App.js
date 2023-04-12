@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./Header";
+import About from "./About";
+import Table from "./Table";
 function App() {
+  const name = "Mingmar Gyalzen Sherpa";
+  const tableInfo = "Programming Languages Am Familiar With";
+  const languages = ["C", "C++", "JAVA", "PHP", "Javascript", "HTML", "CSS"];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header name={name} />
+      <About />gi
+      <Table tableInfo={tableInfo} languages={languages} />
     </div>
   );
 }
