@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header name={name} />
-      <About />gi
+      <About />
       <Table tableInfo={tableInfo} languages={languages} />
     </div>
   );
